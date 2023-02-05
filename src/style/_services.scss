@@ -1,0 +1,143 @@
+
+.services {
+  width: 50%;
+  align-self: flex-end;
+  margin: 18px 0;
+
+  @media (max-width:500px) {
+   width: 80%;
+  }
+
+  &-title {
+    text-align: right;
+    width: 100%;
+    padding-right: 20px;
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.1538;
+    padding-bottom: 8px;
+    font-weight: 400;
+  }
+
+  &-item {
+    display: flex;
+    &+& {
+      margin-top: 15px;
+    }
+  }
+
+  &-box {
+    position: relative;
+    width: 80%;
+    border-left: 1px solid #000;
+  }
+
+  &-name {
+    font-weight: 700;
+    font-size: 13px;
+    position: relative; 
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &-number {
+    font-size: 15px;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+  }
+
+  &-table {
+    padding: 14px 0;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA
+  }
+
+  &-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #333333;
+  }
+}
+
+.reviews{
+  &-nav  {
+    display: flex;
+    justify-content: space-between;
+
+    &-left,&-right {
+      display: flex;
+    }
+  }
+
+  &-all {
+    margin-left: 8px;
+    color: #005DA1;
+  }
+
+  &-icon {
+    position: relative;
+
+    &+& {
+      margin-left: 35px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      width: 13px;
+      height: 13px;
+      transform: translateY(-50%);
+      
+    }
+
+    &.likes-icon {
+      &::before {
+        height: 11px;
+        width: 12px;
+        background: url("../img/like.svg");
+      }
+    }
+
+    &.comments-icon {
+      &::before {
+        background: url("../img/comment.svg");
+      }
+    }
+
+  }
+}
+
+.progress {
+  border-radius: 7px; 
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: #fff;
+}
+
+.progress-green::-webkit-progress-value {
+  background: #B1E19B;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.progress-blue::-webkit-progress-value {
+  background: #ACE2F8;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+

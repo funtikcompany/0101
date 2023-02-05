@@ -1,0 +1,66 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+  }
+
+  &-about {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  &-info {
+    width: 100%;
+    position: relative;
+  }
+
+  &-photo {
+    max-width: 124px;
+    max-height: 124px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+
+  }
+
+  &-name {
+    font-weight: 700;
+    color: #333333;
+    font-size: 16px;
+  }
+
+  &-prof {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.666;
+    color: #808080;
+  }
+
+  &-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.666;
+    color: #333333;
+    padding: 8px 45px;
+    padding-right: 0px;
+    background: #FFFBC8;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    max-width: 360px;
+    margin-left: -40px;
+    width: 100%;
+
+    @media (max-width:400px) {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
